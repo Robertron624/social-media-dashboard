@@ -8,15 +8,25 @@
     --bright-red: hsl(356, 69%, 56%);
     --light-grayish-blue: hsl(227, 47%, 96%);
     --dark-desaturated-blue : hsl(228, 28%, 20%);
-
+    --very-pale-blue: hsl(225, 100%, 98%);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
 }
 
 .overview_card.light {
+    background-color: var(--very-pale-blue);;
+}
+
+.overview_card.light:hover {
     background-color: var(--light-grayish-blue);
 }
 
 .overview_card.dark {
     background-color: var(--dark-desaturated-blue);
+}
+
+.overview_card.dark:hover {
+    filter: brightness(1.2);
 }
 
 .card_top {
