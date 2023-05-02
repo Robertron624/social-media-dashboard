@@ -103,3 +103,10 @@ h1, h2, h3, p, ul {
   background-color: white;
   transition: all 0.3s ease-in-out;
 }
+
+.followers_cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}

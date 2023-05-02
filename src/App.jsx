@@ -1,5 +1,7 @@
-import logo from './logo.svg';
 import styles from './App.module.css';
+
+import { socialFollowers, overviewToday } from './data';
+import FollowersCard from './FollowersCard';
 
 function App() {
   return (
@@ -11,7 +13,6 @@ function App() {
         </div>
         <div class={styles.dark_mode}>
           <p>Dark Mode</p>
-
           <div class={styles.toggle_outer}>
             <div class={styles.toggle_inner}>
 
@@ -19,6 +20,13 @@ function App() {
           </div>
         </div>
       </header>
+      <main>
+        <div class={styles.followers_cards}>
+          {socialFollowers.map((cardInfo) => (
+            <FollowersCard cardInfo={cardInfo} />
+          ))}
+        </div>
+      </main>
     </div>
   );
 }
