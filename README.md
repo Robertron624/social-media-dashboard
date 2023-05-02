@@ -1,34 +1,71 @@
-## Usage
+# Frontend Mentor - Social media dashboard with theme switcher solution
 
-Those templates dependencies are maintained via [pnpm](https://pnpm.io) via `pnpm up -Lri`.
+This is a solution to the [Social media dashboard with theme switcher challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-This is the reason you see a `pnpm-lock.yaml`. That being said, any package manager will work. This file can be safely be removed once you clone a template.
+## Table of contents
 
-```bash
-$ npm install # or pnpm install or yarn install
-```
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-### Learn more on the [Solid Website](https://solidjs.com) and come chat with us on our [Discord](https://discord.com/invite/solidjs)
+**Note: Delete this note and update the table of contents based on what sections you keep.**
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+### The challenge
 
-### `npm dev` or `npm start`
+Users should be able to:
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Toggle color theme to their preference
 
-The page will reload if you make edits.<br>
+### Screenshot
 
-### `npm run build`
+### Links
 
-Builds the app for production to the `dist` folder.<br>
-It correctly bundles Solid in production mode and optimizes the build for the best performance.
+- Solution URL: [Solution URL](https://github.com/Robertron624/social-media-dashboard)
+- Live Site URL: [Live site URL](https://your-live-site-url.com)
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## My process
 
-## Deployment
+### Built with
 
-You can deploy the `dist` folder to any static host provider (netlify, surge, now, etc.)
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [Solid](https://solidjs.com/) - JS library
+- [Css Modules](https://github.com/css-modules/css-modules) - For styles
+- [Vite](vitejs.dev) - Build tool
+
+### What I learned
+
+This was my first time using solidjs. I learned how to use css modules and how to manage states in solidjs. I also learned how to use css variables to change the theme of the website.
+
+I consider Solid to be a very interesting library, since it is very similar to React (simpler in fact), but it has some interesting features like "signals" and "stores".
+
+
+### Continued development
+
+I want to continue learning solidjs and css modules. I think the concept of "signals" in solidjs is very interesting and I want to learn more about it.
+
+### Useful resources
+
+- [How To Manage States In SolidJS](https://techblog.geekyants.com/how-to-manage-states-in-solidjs) - This helped me for managing states in solidjs, since this was my first time using solidjs.
+- [Example resource 2](https://www.solidjs.com/tutorial/flow_for) - This is the official documentation of solidjs regarding the use of Control Flow Statements.
+
+## Author
+
+- Personal Website - [Robert Ramirez](https://robert-ramirez.netlify.app)
+- Frontend Mentor User- [@Robertron624](https://www.frontendmentor.io/profile/Robertron624)
+- Twitter - [@robertdowny](https://www.twitter.com/robertdowny)
