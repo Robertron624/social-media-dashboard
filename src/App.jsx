@@ -2,6 +2,7 @@ import styles from './App.module.css';
 
 import { socialFollowers, overviewToday } from './data';
 import FollowersCard from './FollowersCard';
+import OverviewCard from './OverviewCard';
 
 function App() {
   return (
@@ -21,11 +22,20 @@ function App() {
         </div>
       </header>
       <main>
-        <div class={styles.followers_cards}>
+        <section class={styles.followers_cards}>
           {socialFollowers.map((cardInfo) => (
             <FollowersCard cardInfo={cardInfo} />
           ))}
-        </div>
+        </section>
+        <section class={styles.overview_cards
+        }>
+          <h2 class={styles.overview_title}>Overview - Today</h2>
+          <div class={styles.overview_cards_container}>
+            {overviewToday.map((cardInfo) => (
+              <OverviewCard cardInfo={cardInfo} />
+            ))}
+            </div>
+        </section>
       </main>
     </div>
   );

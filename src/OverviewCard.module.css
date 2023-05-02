@@ -1,0 +1,52 @@
+.overview_card {
+    border-radius: 5px;
+    padding: 1.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    --dark-grayish-blue: hsl(228, 12%, 44%);
+    --lime-green: hsl(163, 72%, 41%);
+    --bright-red: hsl(356, 69%, 56%);
+    --light-grayish-blue: hsl(227, 47%, 96%);
+
+
+    background-color: var(--light-grayish-blue);
+}
+
+.card_top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.views_likes {
+    font-size: .8rem;
+    color: var(--toggle);
+    font-weight: 700;
+
+}
+
+.card_bottom {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.number {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.percentage {
+    font-size: .8rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+}
+
+.positive {
+    color: var(--lime-green);
+}
+
+.negative {
+    color: var(--bright-red);
+}
