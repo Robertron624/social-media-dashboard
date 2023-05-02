@@ -1,6 +1,5 @@
 
 import styles from './FollowersCard.module.css'
-import facebookIcon from './assets/icon-facebook.svg'
 
 const FollowersCard = ({cardInfo, darkmode}) => {
 
@@ -11,7 +10,7 @@ const FollowersCard = ({cardInfo, darkmode}) => {
   return (
     <div class={`${styles.container} ${darkmode() ? styles.dark : styles.light}`}>
         <div class={styles.header}>
-            <img src={`/src/assets/${icon}`} alt={`${name} icon`} />
+            <img src={`${icon}`} alt={`${name} icon`} />
             <p class={styles.username}>{username}</p>
         </div>
         <div class={styles.subscribers}>
@@ -19,7 +18,7 @@ const FollowersCard = ({cardInfo, darkmode}) => {
             <p class={styles.subscribers_text}>{name == 'youtube' ? "subscribers": "followers"}</p>
         </div>
         <span class={`${styles.delta} ${isDeltaPositive ? styles.positive : styles.negative}`}>
-            <img class={styles.delta_icon} src={`/src/assets/icon-${isDeltaPositive ? 'up' : 'down'}.svg`} alt={`${name} icon`} />
+            <img class={styles.delta_icon} src={`icon-${isDeltaPositive ? 'up' : 'down'}.svg`} alt={`${name} icon`} />
             {Math.abs(delta)} Today
           </span>
     </div>
