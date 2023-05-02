@@ -29,11 +29,13 @@ Users should be able to:
 - Toggle color theme to their preference
 
 ### Screenshot
+![image](https://user-images.githubusercontent.com/72587880/235783664-09a9ad22-8cbb-4038-a9f4-b7d64e4e43f8.png)
+![image](https://user-images.githubusercontent.com/72587880/235783883-28e8dcda-991b-4baa-b9bc-39604450fa4d.png)
 
 ### Links
 
 - Solution URL: [Solution URL](https://github.com/Robertron624/social-media-dashboard)
-- Live Site URL: [Live site URL](https://your-live-site-url.com)
+- Live Site URL: [Live site URL]([https://your-live-site-url.com](https://master--delicate-beignet-7b79f5.netlify.app/))
 
 ## My process
 
