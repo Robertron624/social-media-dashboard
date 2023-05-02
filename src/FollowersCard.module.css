@@ -37,6 +37,10 @@
     border-radius: 5px;
 }
 
+.container.dark {
+    background-color: var(--dark-desaturated-blue);
+}
+
 .container::before{
     height: 2px;
     width: 100%;
@@ -78,8 +82,15 @@
 .subscribers .number {
     font-size: 2.5rem;
     font-weight: 700;
-    color: var(--very-dark-blue);
     margin-bottom: .4rem;
+}
+
+.subscribers .number.light {
+    color: var(--very-dark-blue);
+}
+
+.number.dark {
+    color: var(--white);
 }
 
 .subscribers .subscribers_text {

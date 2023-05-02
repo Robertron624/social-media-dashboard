@@ -1,13 +1,13 @@
 import styles from './OverviewCard.module.css'
 
-const OverviewCard = ({cardInfo}) => {
+const OverviewCard = ({cardInfo, darkMode}) => {
 
     const { name, description, value, percentage, icon } = cardInfo
 
     const isValuePositive = percentage > 0
 
   return (
-    <div class={styles.overview_card}>
+    <div class={`${styles.overview_card} ${darkMode() ? styles.dark : styles.light}`}>
       <div class={styles.card_top}>
         <p class={styles.views_likes}>{description}</p>
         <img src={`/src/assets/${icon}`} alt={`${name} icon`} />

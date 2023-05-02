@@ -2,22 +2,20 @@
 import styles from './FollowersCard.module.css'
 import facebookIcon from './assets/icon-facebook.svg'
 
-const FollowersCard = ({cardInfo}) => {
-
-  console.log(cardInfo)
+const FollowersCard = ({cardInfo, darkmode}) => {
 
   const {name, followers, icon, username, delta} = cardInfo
 
   const isDeltaPositive = delta > 0
 
   return (
-    <div class={`${styles.container}`}>
+    <div class={`${styles.container} ${darkmode() ? styles.dark : styles.light}`}>
         <div class={styles.header}>
             <img src={`/src/assets/${icon}`} alt={`${name} icon`} />
             <p class={styles.username}>{username}</p>
         </div>
         <div class={styles.subscribers}>
-            <p class={styles.number}>{followers}</p>
+            <p class={`${styles.number} ${darkmode() ? styles.dark : styles.light}`}>{followers}</p>
             <p class={styles.subscribers_text}>{name == 'youtube' ? "subscribers": "followers"}</p>
         </div>
         <span class={`${styles.delta} ${isDeltaPositive ? styles.positive : styles.negative}`}>
